@@ -204,7 +204,7 @@ Long-Term Data: Similar to the Query Log, this part allows you to go down into t
 
 Groups and Clients: This section has some fairly fascinating capabilities that we won't delve into for the sake of this tutorial, but you can use it to block DNS queries for all devices with the exception of those in a certain group. Alternatively, you can also go more specific about which clients and groups utilize which block lists if you wanted to ONLY prevent DNS queries for devices in a particular group.
 
-<a href="https://avoidthehack.com/best-pihole-blocklists"> The Best Pi-hole Blocklists – Avoidthehack.com – This article does an excellent job of explaining the different types of block lists, and then lists a number of resources for lists in different categories of blocking.
+<a href="https://avoidthehack.com/best-pihole-blocklists"> The Best Pi-hole Blocklists </a> – Avoidthehack.com – This article does an excellent job of explaining the different types of block lists, and then lists a number of resources for lists in different categories of blocking.
 
 
 
