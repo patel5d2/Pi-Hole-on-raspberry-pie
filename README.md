@@ -128,19 +128,49 @@ Now open the terminal in admin mode and run the commend blow.
 
 <b> " curl -sSL https://install.pi-hole.net | bash " </b>
 
+This will fire off the installation wizard. When the screen below appears, press ENTER (OK).
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/31fda241-c92a-4eae-be27-182aa4fb9bfb)
+
+The next screen recommends that you DONATE to help the Pi-hole project – I recommend it as well! Press ENTER (OK).
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/607e491e-ee63-445d-bfeb-4d7c91d953a0)
+
+Next, the wizard gives us a warning about using a static IP address – we’ve already covered this, to move the cursor over to Continue and press ENTER.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/5e0b180d-021f-47e2-95b6-ea8bd1d99771)
+
+On this screen, double-check that the IP address shown is the IP address that you want to use for the Pi-hole and then press ENTER (select Yes – Set static IP using current values).
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/1300751f-8e32-4c51-adc8-92f5b216bd51)
+
+Now we are going to pick an upstream DNS provider. This is the DNS server that the Pi-hole will use to do DNS lookups (initial lookups – then they get cached). Since we’re going to be installing Unbound, we’ll be making our own DNS lookups to the primary root domain servers on the Internet, so for now, it’s fine to pick any one of these – I’ll be using Cloudflare (1.1.1.1) for this tutorial.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/b88203b6-e68d-4706-8bb3-3d360d963b4a)
+
+Next we’re asked if we want to use the default included block list – this block list is a list of domains that Pi-hole is going to block for us. This list is perfectly fine, and will block a significant chunk of suspect sites – however, there are many block lists available, and you’ll likely want to add some more – we’ll cover this later in the tutorial. Choose YES and press ENTER.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/47047874-c94d-456b-b16c-3ad0acc49f49)
+
+Next we’re asked if we want to install the Admin Web Interface, which of course we do! Select YES and press ENTER.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/20ede9ea-a2df-4534-a02b-d53f914f38b0)
+
+
+
+
+
+
+
 Once the installer has been run, you will need to configure your router to have DHCP clients use Pi-hole as their DNS server which ensures all devices connected to your network will have content blocked without any further intervention.
 
 If your router does not support setting the DNS server, you can use Pi-hole's built-in DHCP server; just be sure to disable DHCP on your router first (if it has that feature available).
 
 As a last resort, you can manually set each device to use Pi-hole as its DNS server.
 
-Pi-hole will not be used by the host automatically after installation. To have the host resolve through Pi-hole and your configured blocking lists, you can make the host use Pi-hole as upstream DNS server:
+For more assistant please follow the official guideline on here : https://docs.pi-hole.net/main/basic-install/
 
-If your OS uses dhcpcd for network configuration, you can add to your /etc/dhcpcd.conf
 
-<b> " static domain_name_servers=127.0.0.1 " </b>
-
-Are my assistant please follow the official guideline on. here : https://docs.pi-hole.net/main/basic-install/
 
 
 
