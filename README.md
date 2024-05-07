@@ -126,7 +126,7 @@ Numerous necessary apps are pre-installed on Raspberry Pi OS so you may use them
 
 Now open the terminal in admin mode and run the commend blow.
 
-" curl -sSL https://install.pi-hole.net | bash " 
+<b> " curl -sSL https://install.pi-hole.net | bash " </b>
 
 Once the installer has been run, you will need to configure your router to have DHCP clients use Pi-hole as their DNS server which ensures all devices connected to your network will have content blocked without any further intervention.
 
@@ -138,7 +138,9 @@ Pi-hole will not be used by the host automatically after installation. To have t
 
 If your OS uses dhcpcd for network configuration, you can add to your /etc/dhcpcd.conf
 
-" static domain_name_servers=127.0.0.1 "
+<b> " static domain_name_servers=127.0.0.1 " </b>
+
+Are my assistant please follow the official guideline on. here : https://docs.pi-hole.net/main/basic-install/
 
 
 
