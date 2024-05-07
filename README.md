@@ -168,6 +168,49 @@ Now we’re asked about the level of privacy – you can visit the website liste
 
 ![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/b06589ab-33c5-4eb1-9fb9-c5068c856fda)
 
+That’s it! After this step, Pi-hole has all of the information it needs to get started. You’ll see it run through a bunch of scripts in the CLI (takes about 2 minutes), and will eventually be brought to this screen:
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/3798beb3-523a-4df2-8451-0571e66304a3)
+
+This last screen provides us with an overview of our installation and displays our password for the admin webpage login. This is not something you should write down because we'll be changing the password in the following step.
+
+The Pi-hole Web GUI Admin Password can be changed.
+Run the following command to create a strong password for the Pi-hole admin GUI:
+<b> " pihole -a -p " </b>
+This will have you input a password and then confirm it.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/cfc8a83b-ac83-4bf5-b90b-99210f2448bb)
+
+Log into the Pi-hole GUI
+We’re now ready to log into the GUI for the first time! Open up a browser and input the IP address followed by /admin in this format:
+
+http://xxx.xxx.xxx.xxx/admin
+
+(Substitute my IP address with your own). Note also that this is HTTP and not HTTPS.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/4bd11d0b-baa1-424b-a8c4-267ae6ede2e5)
+
+Enter the Admin password that you set in the previous step and click ‘Log in.’ Upon logging in, we’re presented with the Pi-hole Dashboard – let’s take a look around!
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/4a90d9db-6e25-43e3-be1f-c04513a51871)
+
+Since we haven't used this Pi-hole yet, we don't have a ton of meaningful data.they will begin to appear as soon as we begin sending DNS queries to this server.
+
+Our menu choices are located along the dashboard's left side. Some statistics are shown in the four colored blocks at the top. The total number of requests that Pi-hole has answered is shown in the blue box. The number of those queries that matched FQDNs on the block list and were blocked is indicated by the red box. The percentage of blocked requests is represented by the yellow box (red box divided into the blue box). The number of domains that are on the block lists is finally shown in the green box. Since we now only have one block list, we can see that this Pi-hole will block roughly 158,000 domains.
+
+The Pi-hole's DNS lookup history is displayed in descending order in the Query Log, with the most recent lookups at the top. All domain statuses, including blocked and passed domains, are visible. There is a button to whitelist prohibited domains and a button to blacklist passed domains.
+
+Long-Term Data: Similar to the Query Log, this part allows you to go down into the DNS history of the Pi-hole and perform fine-grained filtering on the data.
+
+Groups and Clients: This section has some fairly fascinating capabilities that we won't delve into for the sake of this tutorial, but you can use it to block DNS queries for all devices with the exception of those in a certain group. Alternatively, you can also go more specific about which clients and groups utilize which block lists if you wanted to ONLY prevent DNS queries for devices in a particular group.
+
+The Best Pi-hole Blocklists – Avoidthehack.com – This article does an excellent job of explaining the different types of block lists, and then lists a number of resources for lists in different categories of blocking.
+
+
+
+
+
+
 
 
 
