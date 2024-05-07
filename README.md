@@ -87,6 +87,70 @@ To finally start writing data to the storage device, answer "Yes" when prompted 
 
 ![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/945a3a02-29fe-4518-8871-dbf4ce99bc47)
 
+The "Write Successful" window indicates that the image has been fully written and validated. Now that the storage device is ready, you can boot a Raspberry Pi from it!
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/8670f6e8-e9bb-4911-920f-93d760776b93)
+
+<h3> <b> Configure the Raspberry Pi. </b> </h3>
+
+Once the operating system image has been installed, attach your storage device to your Raspberry Pi.
+
+To make sure the Raspberry Pi is powered off while you connect peripherals, first unplug the power supply. You can now insert the microSD card that you used to install the operating system into the Raspberry Pi's card slot. You can now attach any additional storage device that you have installed the operating system on to your Raspberry Pi.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/b1976ddc-b32b-484a-9c32-da934be6f89b)
+
+After that, connect any additional devices, such your keyboard, mouse, and monitor.
+
+
+<h3> <b> starting boot configuration </b> </h3>
+
+Congratulations if you preconfigured your Raspberry Pi using OS modification in Imager! You can use your device now. To find out how to make the most of your Raspberry Pi, continue to the next stages.
+
+Examine the status LED if your Raspberry Pi doesn't boot up in five minutes. See the LED warning flash codes for more details if it's flashing. If your Pi won't start up, try these troubleshooting steps:
+
+ * If you didn't use an SD card as your boot device, try using one now.
+
+ * Reimage your SD card, making sure to finish Imager's verification process in its entirety.
+
+ * Reimage your SD card after updating your Raspberry Pi's bootloader
+
+Upon initial boot, a configuration wizard will be launched on your Raspberry Pi if you decided not to customize the OS using Imager. To utilize the wizard, you'll need a keyboard and monitor; a mouse is not necessary.
+
+customize the OS as per your needs.
+
+<h3> <b> Recommended software  </b> </h3>
+
+Numerous necessary apps are pre-installed on Raspberry Pi OS so you may use them right away. To access additional applications that we believe you'll find helpful, click the raspberry icon located in the upper left corner of the screen. To access the package manager, select Preferences > Recommended Software from the drop-down menu. Many pieces of recommended software are available for free installation here.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/7eb89f97-54b6-41e7-8b58-23da994297b2)
+
+Now open the terminal in admin mode and run the commend blow.
+
+" curl -sSL https://install.pi-hole.net | bash " 
+
+Once the installer has been run, you will need to configure your router to have DHCP clients use Pi-hole as their DNS server which ensures all devices connected to your network will have content blocked without any further intervention.
+
+If your router does not support setting the DNS server, you can use Pi-hole's built-in DHCP server; just be sure to disable DHCP on your router first (if it has that feature available).
+
+As a last resort, you can manually set each device to use Pi-hole as its DNS server.
+
+Pi-hole will not be used by the host automatically after installation. To have the host resolve through Pi-hole and your configured blocking lists, you can make the host use Pi-hole as upstream DNS server:
+
+If your OS uses dhcpcd for network configuration, you can add to your /etc/dhcpcd.conf
+
+" static domain_name_servers=127.0.0.1 "
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
