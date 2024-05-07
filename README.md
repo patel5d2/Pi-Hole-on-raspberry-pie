@@ -206,22 +206,17 @@ Groups and Clients: This section has some fairly fascinating capabilities that w
 
 <a href="https://avoidthehack.com/best-pihole-blocklists"> The Best Pi-hole Blocklists </a> – Avoidthehack.com – This article does an excellent job of explaining the different types of block lists, and then lists a number of resources for lists in different categories of blocking.
 
+Adlists: By default, we have a well-maintained default block list that blocks a large number of websites without impairing standard Internet functioning. However, bear in mind that the more sites you add to your block lists, the higher the likelihood that you will break something. That being said, you can be VERY specific about what you're blocking, including malicious websites, adult content, ad sites, tracking & telemetry sites, and more. Specific public block lists exist for each of these types of content. After that, you'll have to deal with your relatives' complaints about "the Internet" not functioning. The secret is to strike a happy balance where a lot of blocking is accomplished without degrading user experience.
 
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/13dd05b4-5b04-4bd7-91dd-2a48500eea79)
 
+I'm going to copy and paste the first two green URLs from each Firebog section for this lesson. Feel free to repeat this process for as many block lists as you like. After finishing, we must instruct Pi-hole to import these lists.
 
+Navigate to Tools –> Update Gravity and then click the ‘Update’ button. This will comb through all of the block lists and add the blocked URLs to the Pi-hole database. Once complete, you’ll see a green ‘Success’ banner at the top of the screen.
 
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/e99d3c83-ad91-47d4-8377-b56878352efc)
 
-
-
-
-
-
-
-
-
-Once the installer has been run, you will need to configure your router to have DHCP clients use Pi-hole as their DNS server which ensures all devices connected to your network will have content blocked without any further intervention.
-
-If your router does not support setting the DNS server, you can use Pi-hole's built-in DHCP server; just be sure to disable DHCP on your router first (if it has that feature available).
+Congratulations you have successfully started blocking the website. That you don't want in your network and it is across the network level locker so once you configure it here, router all of your device going to block those websites.
 
 As a last resort, you can manually set each device to use Pi-hole as its DNS server.
 
