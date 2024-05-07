@@ -156,6 +156,20 @@ Next we’re asked if we want to install the Admin Web Interface, which of cours
 
 ![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/20ede9ea-a2df-4534-a02b-d53f914f38b0)
 
+Another notice about the web server – just choose YES and press ENTER.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/208b2315-a88b-40fc-b1dc-11c7c8d2dd96)
+
+Next, we’re asked if we want to enable query logging. Typically, you will want to say Yes here, but if you’re super security conscious and you don’t want any of your DNS lookups logged, you can also choose No.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/0fc6540b-4e63-45ad-8fec-bcf04ecc3b00)
+
+Now we’re asked about the level of privacy – you can visit the website listed for more information. For this tutorial, we’re going to select ‘Show everything’ and press Continue.
+
+![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/b06589ab-33c5-4eb1-9fb9-c5068c856fda)
+
+
+
 
 
 
