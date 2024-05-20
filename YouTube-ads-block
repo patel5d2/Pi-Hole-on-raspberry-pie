@@ -1,0 +1,47 @@
+# YouTube Ad Domains
+googlevideo.com
+youtube.com/get_video_info
+youtube.com/api/stats/ads
+youtube.com/youtubei/v1/ads
+youtube.com/pagead
+youtube.com/pagead/lvz
+youtube.com/pagead/companion
+youtube.com/pagead/viewthroughconversion
+youtube.com/pagead/interactive_media_ads
+youtube.com/pagead/aclk
+youtube.com/pagead/1p-user-list
+youtube.com/api/stats/qoe
+
+# Google Ad Services for YouTube
+ads.google.com
+ads.youtube.com
+doubleclick.net
+googleads.g.doubleclick.net
+googleadservices.com
+adservice.google.com
+yt3.ggpht.com
+youtube.112.2o7.net
+
+# Video Ad Servers
+ads.videoadex.com
+pubads.g.doubleclick.net
+ad.doubleclick.net
+
+# Other YouTube-related Ad Servers
+s.youtube.com
+s.ytimg.com
+www.youtube-nocookie.com
+i.ytimg.com
+ytstatic.l.google.com
+static.doubleclick.net
+
+# Miscellaneous Ad URLs
+youtube.com/ptracking
+youtube.com/pcs/activeview
+securepubads.g.doubleclick.net
+
+# Tracking Pixels
+youtube.com/ptracking
+youtube.com/csi_204
+pagead2.googlesyndication.com
+
