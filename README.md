@@ -217,6 +217,7 @@ Navigate to Tools –> Update Gravity and then click the ‘Update’ button. Th
 ![image](https://github.com/patel5d2/Pi-Hole-on-raspberry-pie/assets/131821512/e99d3c83-ad91-47d4-8377-b56878352efc)
 
 Congratulations you have successfully started blocking the website. That you don't want in your network and it is across the network level locker so once you configure it here, router all of your device going to block those websites.
+
 I have also made two custom block list one for mix and match and one for YouTube, which I wanted to do eagerly feel free to use that as well.
 
 As a last resort, you can manually set each device to use Pi-hole as its DNS server.
