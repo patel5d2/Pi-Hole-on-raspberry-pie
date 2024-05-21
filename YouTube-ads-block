@@ -1,4 +1,4 @@
-# YouTube Ad Domains
+# Primary YouTube Ad Domains
 googlevideo.com
 youtube.com/get_video_info
 youtube.com/api/stats/ads
@@ -11,6 +11,18 @@ youtube.com/pagead/interactive_media_ads
 youtube.com/pagead/aclk
 youtube.com/pagead/1p-user-list
 youtube.com/api/stats/qoe
+
+# Additional YouTube Ad and Tracking URLs
+youtube.com/pagead/conversion/
+youtube.com/pagead/visit/
+youtube.com/pagead/gadgets/
+youtube.com/pagead/gen_204
+youtube.com/pagead/adview
+youtube.com/pagead/clk
+youtube.com/pagead/lvz
+youtube.com/pagead/ads
+youtube.com/pagead/csi
+youtube.com/pagead/rtj
 
 # Google Ad Services for YouTube
 ads.google.com
@@ -35,13 +47,63 @@ i.ytimg.com
 ytstatic.l.google.com
 static.doubleclick.net
 
-# Miscellaneous Ad URLs
-youtube.com/ptracking
-youtube.com/pcs/activeview
-securepubads.g.doubleclick.net
+# YouTube's Advertising and Analytics Servers
+google-analytics.com
+ssl.google-analytics.com
+stats.g.doubleclick.net
+analytics.google.com
+adwords.google.com
+ads.googleusercontent.com
 
 # Tracking Pixels
 youtube.com/ptracking
 youtube.com/csi_204
 pagead2.googlesyndication.com
+www-google-analytics.l.google.com
 
+# Additional Tracking URLs
+tpc.googlesyndication.com
+adservice.google.co.uk
+adservice.google.com
+adservice.google.fr
+adservice.google.de
+adservice.google.es
+adservice.google.it
+adservice.google.nl
+adservice.google.pl
+
+# DoubleClick Tracking and Ads
+securepubads.g.doubleclick.net
+cm.g.doubleclick.net
+pubads.g.doubleclick.net
+partner.googleadservices.com
+
+# Ad-related Content Delivery Networks (CDNs)
+r2---sn-a5mekned.googlevideo.com
+r1---sn-a5m7ln7s.googlevideo.com
+r3---sn-a5mekn7e.googlevideo.com
+r5---sn-a5m7ln76.googlevideo.com
+
+# Miscellaneous Ad URLs
+youtube.com/ptracking
+youtube.com/pcs/activeview
+www.youtube.com/ptracking
+www.youtube.com/pcs/activeview
+
+# Other Ad-related Domains
+adclick.g.doubleclick.net
+adclick.googlesyndication.com
+ads.googlesyndication.com
+pagead.googlesyndication.com
+pagead2.googlesyndication.com
+partnerad.l.doubleclick.net
+partnerad2.l.doubleclick.net
+fls.doubleclick.net
+googleads4.g.doubleclick.net
+
+# Social Media Ads that Might Intersect with YouTube
+facebook.com/ads
+twitter.com/ads
+instagram.com/ads
+linkedin.com/ads
+pinterest.com/ads
